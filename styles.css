@@ -1,0 +1,29 @@
+#grid-container{
+    display: grid;
+    grid-template-columns: 200px 100px;
+    grid-row-gap: 50px;
+    grid-column-gap: 20px ;
+    justify-content: center;
+    grid-template-areas: 
+    "header header"
+    "sidebar content"
+    "sidebar content" ;
+}
+
+.grid-item-1{
+    grid-area: header;
+}
+
+.grid-item-3{
+    /* grid-column-end: 2; */
+}
+
+.images{
+    height: 150px;
+    width: 150px;
+}
+
+#image-1{
+    width: 400px;
+}
+
