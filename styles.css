@@ -1,26 +1,31 @@
 #grid-container{
+    /* Syntax to use the grid property */
     display: grid;
-    grid-template-columns: 100px 100px 100px;
-    grid-column-gap: 200px ;
-    grid-row-gap: 50px;
+    /* grid-template-columns is used to decide the number and  width of the columns */
+    grid-template-columns: repeat(100px,3);
+    /* grid-column-gap is used for giving a particular gap between two columns */
+    grid-column-gap: 150px ;
+    /* grid-row-gap is used for giving a particular gap between two rows */
+    grid-row-gap: 15px;
+    /* It is used to align the items to center along the flow of content */
     justify-content: center;
+    /* Given for the use of header in the grid */
     grid-template-areas: 
     "header header header"
     "sidebar content content"
     "sidebar content content" ;
     
 }
-
+ /*Used to make the first element as header */
 .grid-item-1{
     grid-area: header;
 }
-
-
+/* Setting the images sizes */
 .images{
     height: 150px;
     width: 150px;
 }
-
+/* increasing the first images width */
 #image-1{
     width: 750px;
 }
